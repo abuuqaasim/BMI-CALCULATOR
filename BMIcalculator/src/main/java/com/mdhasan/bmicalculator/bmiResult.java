@@ -16,7 +16,7 @@ public class bmiResult {
     
     public String mbiCalculate(double weight, double height){
         
-        double bmi= weight/height;
+        double bmi= weight/(Math.pow(height,2));
         
         if(bmi<18.5){
             return "UNDERWEIGHT";
